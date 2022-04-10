@@ -1,3 +1,26 @@
+# Animal Classifier Project Setup
+
+## **First time setup**
+  1. Stand in root folder (animal_classifier) 
+  2. Open a terminal,
+  3. Run following command  `npm install`
+
+## Setup http-server
+  1. Stand in root folder (animal_classifier) 
+  2. Open a terminal, 
+  3. Run following command: `cd server && http-server -o -c-1 --cors` 
+  4. To inspect files in server go to one of following addresses: 
+       * http://localhost:8080 
+       * http://127.0.0.1:8080
+       * http://192.168.1.130:8080
+       * http://192.168.56.1:8080
+
+## Run React Project
+  1. Stand in root folder (animal_classifier) 
+  2. Open a terminal, 
+  4. Run following command: `npm start`  
+  5. Go to http://localhost:3000
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

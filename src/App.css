@@ -2,8 +2,9 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 50vmin;
+.image {
+  height: 35vmin;
+  width: 50vmin;
   pointer-events: none;
 }
 
@@ -18,3 +19,64 @@
   color: white;
 }
 
+.App-header h1 {
+  margin: 0 0 1rem 0;
+}
+
+.App-header ul {
+  display: grid;
+  justify-items: start;
+  grid-template-columns: auto auto;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.App-header ul li{
+  list-style-type: none;
+}
+
+.App-header ul li h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.App-btn__container{
+  display: flex;
+  margin: 1rem 0;
+}
+
+.App-btn__container button{
+  padding: 0.5rem 1rem;
+  background-color: forestgreen;
+  border: 0;
+  color: white;
+  border-radius: 0.5rem;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+.App-btn__container button:hover{
+  background-color: darkgreen;
+}
+
+.App-btn__container button:active, .App-btn__container button:focus-visible{
+  color: black;
+}
+
+.App-btn__container button:disabled{
+  background-color: grey;
+  color: dimgrey;
+}
+
+.App-btn__container button:disabled:hover{
+  background-color: grey;
+}
+
+.App-btn__container button:disabled:active{
+  color: dimgrey;
+}
+
+.App-btn__container button:nth-child(2){
+  margin: 0 1rem;
+}
