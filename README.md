@@ -8,7 +8,7 @@
 ## Setup http-server
   1. Stand in root folder (animal_classifier) 
   2. Open a terminal, 
-  3. Run following command: `cd server && http-server -o -c-1 --cors` 
+  3. Run following command: `cd server && http-server --cors` 
   4. To inspect files in server go to one of following addresses: 
        * http://localhost:8080 
        * http://127.0.0.1:8080

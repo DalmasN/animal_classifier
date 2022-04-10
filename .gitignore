@@ -6,7 +6,9 @@
 .pnp.js
 
 #weights
-/server/weights/*
+/server/weights/BO5/*
+/server/weights/BO16/*
+/server/weights/VJ-O/*
 
 # testing
 /coverage
