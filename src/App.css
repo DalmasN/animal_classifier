@@ -1,45 +1,65 @@
 .App {
   text-align: center;
-}
-
-.image {
-  height: 35vmin;
-  width: 50vmin;
-  pointer-events: none;
-}
-
-.App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.image {
+  height: 27vmin;
+  width: 38vmin;
+  pointer-events: none;
 }
 
 .App-header h1 {
   margin: 0 0 1rem 0;
 }
 
-.App-header ul {
+.App ul {
   display: grid;
-  justify-items: start;
-  grid-template-columns: auto auto;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 2rem;
   margin: 0;
   padding: 0;
 }
 
-.App-header ul li{
+.App ul li{
+  display: flex;
   list-style-type: none;
+  outline: solid white 2px;
+  height: 36vmin;
+  width: 43vmin;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 1rem;
 }
 
-.App-header ul li h2 {
+.App ul li a {
+  display: block;
+}
+
+.App ul li h2 {
+  text-transform: uppercase;
   font-size: 1.5rem;
   margin: 0;
 }
+
+.App ul li h2 span.positive{
+  color: green;
+}
+.App ul li h2 span.negative{
+  color: gold;
+}
+
+
+/*----------------------------------------
+ BUTTONS 
+----------------------------------------*/
 
 .App-btn__container{
   display: flex;
@@ -54,6 +74,7 @@
   border-radius: 0.5rem;
   outline-style: solid;
   outline-width: 2px;
+  margin: 0 0.2rem;
 }
 
 .App-btn__container button:hover{
@@ -66,7 +87,7 @@
 
 .App-btn__container button:disabled{
   background-color: grey;
-  color: dimgrey;
+  color: silver;
 }
 
 .App-btn__container button:disabled:hover{
@@ -74,9 +95,43 @@
 }
 
 .App-btn__container button:disabled:active{
-  color: dimgrey;
+  color: silver;
 }
 
 .App-btn__container button:nth-child(2){
-  margin: 0 1rem;
+  margin: 0 1.7rem;
+}
+
+
+/*----------------------------------------
+ ICONS ⚠
+----------------------------------------*/
+.loading-icon-large{
+  height: 15vmin;
+  width: auto;
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
+  transform-origin: 50% 66.66%;
+}
+
+.loading-icon-small{
+  width: 2rem;
+  height: 2rem;
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
+  transform-origin: 50% 66.66%;
+}
+@-moz-keyframes spin { 
+  100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+  100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+  100% { 
+      -webkit-transform: rotate(360deg); 
+      transform:rotate(360deg); 
+  } 
 }
