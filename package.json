@@ -17,6 +17,7 @@
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-scripts": "5.0.0",
+    "seedrandom": "^3.0.5",
     "web-vitals": "^2.1.4",
     "xml-js": "^1.6.11"
   },
@@ -45,6 +46,7 @@
     ]
   },
   "devDependencies": {
+    "eslint-plugin-react-hooks": "^4.4.0",
     "source-map-loader": "^3.0.1",
     "ts-loader": "^9.2.8",
     "typescript": "^4.6.3"
